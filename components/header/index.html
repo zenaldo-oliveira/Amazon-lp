@@ -1,13 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Amazon</title>
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <p>
-    Header
-  </p>
+  <header>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="nav-logo border">
+        <div class="logo"></div>
+      </div>
+
+      <!-- Endereço -->
+      <div class="nav-address border">
+        <p class="add-first">Enviar para</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="add-second">Brasil</p>
+        </div>
+      </div>
+
+      <!-- Barra de busca -->
+      <div class="nav-search">
+        <select class="search-select" aria-label="Categoria de busca">
+          <option value="">Todo</option>
+          <option value="completo">Completo</option>
+          <option value="pendente">Pendente</option>
+          <option value="em_andamento">Em andamento</option>
+        </select>
+
+        <input class="search-input" placeholder="Pesquisar Amazon.com.br" />
+
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <!-- Login -->
+      <div class="nav-signin border">
+        <p><span>Olá, faça seu login</span></p>
+        <p class="nav-second">Contas e listas</p>
+      </div>
+
+      <!-- Devoluções -->
+      <div class="nav-return border">
+        <p><span>Devoluções</span></p>
+        <p class="nav-second">e Pedidos</p>
+      </div>
+
+      <!-- Carrinho -->
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+        <span class="cart">Carrinho</span>
+      </div>
+    </div>
+
+    <!-- Painel de Navegação -->
+    <div class="panel">
+      <div class="panel-ops">
+        <p class="border2 all"><i class="fa-solid fa-bars"></i> Todos</p>
+        <p class="border">Oferta do dia</p>
+        <p class="border">Comprar novamente</p>
+        <p class="border">Atendimento ao cliente</p>
+        <p class="border">Cartões de presentes</p>
+        <p class="border">Alimentos e Bebidas</p>
+      </div>
+
+      <div class="panel-deals border2" style="padding: 0.66%;">
+        Ofertas em eletrônicos
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
